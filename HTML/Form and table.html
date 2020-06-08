@@ -11,7 +11,7 @@
     </style>
   </head>
   <body>
-    <form action="welcome.html">
+    <form action="welcome.html" method="POST">
       <fieldset>
         <legend align="center">Registration Form</legend>
         <table width="500">
@@ -72,6 +72,19 @@
           </tr>
           <tr>
             <td>
+              <label for="">Date time local</label>
+            </td>
+            <td>: <input type="datetime-local" /></td>
+          </tr>
+          <tr>
+            <tr>
+              <td>
+                <label for="">telephone</label>
+              </td>
+              <td>: <input type="tel" /></td>
+            </tr>
+            <tr>
+            <td>
               <input type="submit" name="submit" title="Saves the Data" />
             </td>
           </tr>
@@ -114,8 +127,19 @@
 
     <!--marquee code-->
     <marquee behavior="alternate" direction="">hi</marquee>
-    <marquee behavior="alternate" scrollamount="40" width="500" height="500"
+   
       >hello</marquee
     >
+    <!--Anchor tag-->
+    <h1>Anchor Tag</h1>
+    <a href="../HTML/1_formating tags.html"></a>
+
+    <!--Video tag-->
+    
+    <video width="500" controls>
+      <source src="../assets/video/movie.mp4" type="video/mp4" />
+      <source src="mov_bbb.ogg" type="video/ogg" />
+      Your browser does not support HTML video.
+    </video>
   </body>
 </html>
