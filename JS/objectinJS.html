@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Display object content from JS code</h1>
+
+    <p id="demo"></p>
+
+    <script>
+      var person = {
+        name: "Pallavi",
+        age: 24,
+        height: "5.8",
+        weight: 50,
+      };
+
+      document.getElementById("demo").innerHTML =
+        "Person " + person.name + " is " + person["age"] + " year old.";
+    </script>
+  </body>
+</html>

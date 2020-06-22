@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="assets/img/img1.jpg" width="300px" id="img1" />
+
+    <button onclick="ele.width = 600;">Click to Change Width</button>
+
+    <button onclick="ele.src='assets/img/img2.jpg'">
+      click to change the image
+    </button>
+
+    <script>
+      var ele = document.getElementById("img1");
+      console.log("ele", ele);
+    </script>
+  </body>
+</html>

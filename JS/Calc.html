@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        width: 40px;
+        height: 40px;
+      }
+
+      #cls {
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Calculator</p>
+    <input type="text" id="textinput" /><br /><br />
+    <button onclick="display(1)">1</button>
+    <button onclick="display(2)">2</button>
+    <button onclick="display(3)">3</button>
+    <button onclick="display(4)">4</button>
+    <button onclick="display(5)">5</button>
+    <p></p>
+    <button onclick="display('+')">+</button>
+    <button onclick="display('-')">-</button>
+    <button onclick="calc()">=</button>
+    <button onclick="cls()" id="cls"><b>C</b></button>
+
+    <script>
+      function display(val) {
+        document.getElementById("textinput").value += val;
+      }
+
+      function calc() {
+        var x = document.getElementById("textinput").value;
+        document.getElementById("textinput").value = eval(x);
+      }
+
+      function cls() {
+        document.getElementById("textinput").value = "";
+      }
+    </script>
+  </body>
+</html>

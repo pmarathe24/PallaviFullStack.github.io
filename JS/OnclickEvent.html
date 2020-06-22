@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <br />
+    <br />
+    <!-- <button onclick="this.innerHTML=Date()">The time is ?</button>-->
+    <p>Click on the below button to display date</p>
+
+    <button onclick="displayDate()">The date is?</button>
+
+    <script>
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
+
+    <p id="demo"></p>
+
+    <p>Mouse Over Event</p>
+
+    <div onmouseover="displayDate()" id="demo">Mouse over here for date..</div>
+  </body>
+</html>

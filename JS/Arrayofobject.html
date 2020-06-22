@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arrofObj = [
+        {
+          sName: "Pallavi",
+          sRno: 1,
+          sDoB: "01/01/81",
+          sMarks: ["100", "68", "70", "80"],
+        },
+
+        {
+          sName: "swara",
+          sRno: 2,
+          sDoB: "01/01/81",
+          sMarks: ["100", "68", "70", "80"],
+        },
+
+        {
+          sName: "anjali",
+          sRno: 3,
+          sDoB: "01/01/81",
+          sMarks: ["100", "68", "70", "80"],
+        },
+
+        {
+          sName: "tina",
+          sRno: 4,
+          sDoB: "01/01/81",
+          sMarks: ["100", "68", "70", "80"],
+        },
+
+        {
+          sName: "rahul",
+          sRno: 5,
+          sDoB: "01/01/81",
+          sMarks: ["100", "68", "70", "80"],
+        },
+      ];
+      document.write("<br>Printing array of students");
+
+      for (var i = 0; i < arrofObj.length; i++) {
+        for (var j in arrofObj[i]) {
+          document.write("<br> " + j + " : " + arrofObj[i][j]);
+        }
+      }
+    </script>
+  </body>
+</html>

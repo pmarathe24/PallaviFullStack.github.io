@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table width="500">
+      <thead>
+        <th colspan="2">Calculations</th>
+      </thead>
+      <tr>
+        <td align="right">1st Number:</td>
+        <td>
+          <input type="text" id="firstnumber" />
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          2nd Number:
+        </td>
+        <td>
+          <input type="text" id="secondnumber" />
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          Answer:
+        </td>
+        <td>
+          <input type="text" id="ans" />
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          <button onclick="mul1()">Multiply</button>
+        </td>
+        <td>
+          <button onclick="div()">Divide</button>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function mul1() {
+        var n1 = document.getElementById("firstnumber").value;
+        //console.log("mul -> num1", n1);
+        var n2 = document.getElementById("secondnumber").value;
+        //console.log("mul -> num2", n2);
+
+        document.getElementById("ans").value = n1 * n2;
+      }
+    </script>
+  </body>
+</html>

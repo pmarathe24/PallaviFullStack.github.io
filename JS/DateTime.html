@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="day"></p>
+
+    <p id="time"></p>
+    <p id="curDate"></p>
+    <script>
+      var today = new Date();
+      console.log("today", today);
+
+      var day = today.getDay();
+      var tDate = today.getDate();
+      console.log("tDate", tDate);
+
+      var tMonth = today.getMonth();
+      console.log("tMonth", tMonth);
+
+      var tYear = today.getFullYear();
+      console.log("tYear", tYear);
+
+      if (tDate < 10) {
+        tDate = "0" + tDate;
+      }
+
+      if (tMonth < 10) {
+        tMonth = "0" + tMonth;
+      }
+      var daylist = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      var hours = today.getHours();
+      console.log("hours", hours);
+
+      var minutes = today.getMinutes();
+      console.log("minutes", minutes);
+
+      var seconds = today.getSeconds();
+      console.log("seconds", seconds);
+
+      if (hours < 12) {
+        var prepend = "AM";
+      } else if (hours == 12) {
+        var prepend = "Noon";
+      } else {
+        var prepend = "PM";
+      }
+
+      document.getElementById("day").innerHTML = "Today is : " + daylist[day];
+
+      document.getElementById("time").innerHTML =
+        "Current time is : " + hours + prepend + ":" + minutes + ":" + seconds;
+
+      document.getElementById("curDate").innerHTML =
+        "Todays Date is : " + tDate + "/" + tMonth + "/" + tYear;
+    </script>
+  </body>
+</html>

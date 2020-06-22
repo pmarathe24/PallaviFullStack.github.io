@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("Printing and object with array element");
+
+      var Student = {
+        sName: "Swara",
+        sRNo: 21,
+        sPer: 60,
+        sMarks: ["61", "55", "65", "72", "63"],
+        sResult: true,
+      };
+
+      for (var i in Student) {
+        if (typeof Student[i] == "boolean") {
+          document.write("<br> Student Passed the exam");
+        } else if (Array.isArray(Student[i])) {
+          document.write("<br> Students Marks");
+
+          for (var j of Student[i]) {
+            document.write(" " + j);
+          }
+        } else {
+          document.write("<br> " + i + " : " + Student[i]);
+        }
+      }
+    </script>
+  </body>
+</html>
